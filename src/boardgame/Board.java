@@ -1,9 +1,18 @@
+/**
+ * Representa o tabuleiro de jogo (camada mais baixa).
+ * Responsável por gerenciar a matriz de peças e validar posições.
+ * Implementa programação defensiva para evitar erros de limites de matriz.
+ *
+ * @author Thalita Menezes
+ * @version 1.0
+ */
+
 package boardgame;
 
 public class Board {
 	private int rows;
 	private int columns;
-	private Piece[][] pieces;
+	private Piece[][] pieces; //Encapsulado
 
 	public Board(int rows, int columns) {
 		if (rows < 1 || columns < 1) {
